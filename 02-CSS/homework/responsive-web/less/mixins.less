@@ -1,1 +1,42 @@
 // Mixins acá
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: @nav-bg;
+    h2{
+        padding:15px 0px;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        li{
+            font-size: 25px;
+            display: inline-block;
+        }
+    }
+}
+
+ header{
+    img{
+        border-radius: 20px;
+    }
+ }
+
+ .btn {
+    display: flex;
+    width: 100px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    color: @wild-sand;
+    background-color: @btn-bg-color;
+ }
+
+

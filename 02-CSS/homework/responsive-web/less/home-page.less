@@ -1,6 +1,7 @@
 // Conteindo del Home
 
 .home {
+  
 
   .intro {
 
@@ -25,8 +26,9 @@
       border-radius: 20px;
       height: 100%;
     }
+  
   }
-
+ 
   .musica-nueva {
     padding: 15px;
 
@@ -71,5 +73,20 @@
         border-radius: 10px;
       }
     }
+  }
+}
+
+@media screen and (max-width: 900px){
+  .home{
+      
+      flex-direction: column;
+  }
+
+   .ondas, .tecnologia {
+    display: none;
+  }
+  .auricular img {
+    position: absolute;
+    margin-top: 200px;
   }
 }
