@@ -1,42 +1,30 @@
-// Mixins acá
-
-.nav {
+// Mixins acá   
+.flex(@direction: row, @justify: center, @align: center){
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    background-color: @nav-bg;
-    h2{
-        padding:15px 0px;
-    }
-    ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-        li{
-            font-size: 25px;
-            display: inline-block;
-        }
-    }
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
 }
 
- header{
-    img{
-        border-radius: 20px;
-    }
- }
+.imgBorderRadius(@radius:20px){
+    border-radius:@radius ;
+}
 
- .btn {
-    display: flex;
-    width: 100px;
+.btn{
     padding: 10px;
+    border-radius: 4px;
     font-size: 15px;
-    border-radius: 10px;
-    color: @wild-sand;
-    background-color: @btn-bg-color;
- }
+}
 
-
+.registerBtn(@bg-color,@font-color){
+    .btn();
+    color: @font-color;
+    background-color: @bg-color;
+    display: inline-block;
+    border: 1px solid @bg-color;
+    &:hover {
+        background-color: @font-color;
+        color: @bg-color;
+    
+    }
+}
