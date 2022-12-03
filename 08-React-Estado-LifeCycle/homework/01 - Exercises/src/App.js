@@ -4,7 +4,8 @@ import Zoo from "./components/Zoo/Zoo.jsx";
 export default function App() {
   return (
     <div>
-      <Zoo />
+      <Zoo/>
     </div>
   );
 }
+
